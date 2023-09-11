@@ -17,11 +17,15 @@ function nextSlide() {
         item.style.transform = `translateX(${(index - currentIndex + length) % length * 100}%)`;
     })
 }
+
+
 nextSlide()
 
 next.addEventListener("click", () => {
     nextSlide();
 })
+
+
 
 
 function prewSlide() {
@@ -40,3 +44,11 @@ prewSlide()
 prev.addEventListener("click", () => {
     prewSlide();
 })
+
+const pointers = document.querySelectorAll(".pointers");
+pointers.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        currentIndex = index - 1;
+        nextSlide();
+    })
+});
