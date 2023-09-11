@@ -9,7 +9,7 @@ body {
   max-width: 800px;
   height: 350px;
   position: relative;
-  /* overflow: hidden; */
+  border-radius: 15px;
 }
 
 .slide {
@@ -52,13 +52,4 @@ body {
 .btn-next {
   top: 45%;
   right: 2%;
-}
-
-.slider {
-  width: 100%;
-  max-width: 800px;
-  height: 350px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
 }/*# sourceMappingURL=style.css.map */
